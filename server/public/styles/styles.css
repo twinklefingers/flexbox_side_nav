@@ -1,6 +1,6 @@
 @font-face {
     font-family: fashionFetish;
-    src: url(../../fonts/fashion_fetish/FashionFetishLight.ttf);
+    src: url(../assets/fonts/fashion_fetish/FashionFetishLight.ttf);
 }
 
 body, #container {
@@ -53,4 +53,9 @@ nav a {
     box-shadow: 1% 1% 5px darkgrey;
     border: thin solid darkgrey;
     /*background-color: #2992BC;*/
+}
+
+.tester {
+  float: right;
+  font-size: 5em;
 }

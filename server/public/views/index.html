@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>FlexBox SideNav</title>
+
+    <script type="text/javascript" src="./vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./vendors/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="./scripts/clientapp.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <aside id="sideNav">
+            <header>
+                <a href="#"><img src="./assets/imgs/logo_placeholder.png" /></a>
+            </header>
+            <nav>
+                <a href="#one">One</a>
+                <a href="#two">Two</a>
+                <a href="#three">Three</a>
+                <a href="#four">Four</a>
+                <a href="#five">Five</a>
+            </nav>
+        </aside>
+        <main ng-view>
+
+        </main>
+
+        <footer>
+
+        </footer>
+    </div>
+    <!-- end page container: above div-->
+</body>
+
+</html>

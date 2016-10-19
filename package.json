@@ -1,0 +1,29 @@
+{
+  "name": "flexbox_side_nav",
+  "version": "1.0.0",
+  "description": "Want to work up a sidebar nav using FlexBox CSS techniques. Want to implement a custom color palette using a Complementary Color Scheme.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twinklefingers/flexbox_side_nav.git"
+  },
+  "keywords": [
+    "flexbox",
+    "sidenav"
+  ],
+  "author": "twinklefingers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twinklefingers/flexbox_side_nav/issues"
+  },
+  "homepage": "https://github.com/twinklefingers/flexbox_side_nav#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "express": "^4.14.0"
+  }
+}
