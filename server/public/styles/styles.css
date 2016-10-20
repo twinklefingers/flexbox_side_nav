@@ -9,12 +9,14 @@ body, #container {
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 #sideNav {
     position: absolute;
     /*right: 0;*/
-    width: 20%;
+    width: 200px;
+    height: 100%;
     overflow: auto;
     /*border: thin dotted magenta;*/
 }
@@ -27,7 +29,6 @@ img {
 
 header {
     text-align: center;
-    border: 1px solid black;
 }
 
 header a {
@@ -47,15 +48,22 @@ nav a {
     /*align-items: center;*/
     text-align: center;
     vertical-align: middle;
-    line-height: 15vh;
-    width: 99%;
-    min-height: 15vh;
-    box-shadow: 1% 1% 5px darkgrey;
-    border: thin solid darkgrey;
+    width: 97%;
+    line-height: 5em;
+    min-height: 5em;
+    border-width: .5px 1px;
+    border: solid #9C9D9D;
+    transition: all 0.3s ease 0s;
     /*background-color: #2992BC;*/
 }
 
+nav a:hover {
+    box-shadow: inset 0 0 0 1px #9C9D9D;
+    background: #F0FFFF;
+    font-weight: bold;
+}
+
 .tester {
-  float: right;
-  font-size: 5em;
+    float: right;
+    font-size: 5em;
 }

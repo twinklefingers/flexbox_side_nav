@@ -6,7 +6,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
     when('/one', {
         templateUrl: "/views/partials/one.html",
-        controller: ""
+        controller: "OneController"
     }).
     when('/two', {
         templateUrl: "/views/partials/two.html",
@@ -26,5 +26,11 @@ myApp.config(['$routeProvider', function($routeProvider) {
     }).
     otherwise({
         redirectTo: "/#"
-    });
-}]);
+    }); // end config
+
+}]); // end module
+
+// myApp.controller('OneController', ['$scope', function($scope) {
+//     console.log("You clicked on One");
+//
+// }]);
