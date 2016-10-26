@@ -1,6 +1,12 @@
-//nest selectors
+// variables
+$background: #fff0f2;
+//nested selectors
 nav {
-
+  position: absolute;
+  width: 200px;
+  top: 0;
+  bottom: 7%;
+  overflow: auto;
     a {
         text-decoration: none;
         color: black;
@@ -11,38 +17,31 @@ nav {
         text-align: center;
         vertical-align: middle;
         width: 97%;
+        height: 15%;
         line-height: 5em;
         min-height: 5em;
         border-width: 0.5px 1px;
         border: solid #9C9D9D;
         transition: all 0.3s ease 0s;
-        /*background-color: #2992BC;*/
+        background: $background;
+        margin: 0;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
     }
 
-    .one:hover {
-      background: #ffe5e5;
-      font-weight: bold;
-      font-size: 1.25em;
+    a:hover {
+        font-weight: bold;
+        font-size: 1.25em;
+        // operators like * can affect a set variables like color in a methodical manner
+        // in this case, the color should lighten on hover, no matter what particular shade
+        background: $background * 1.04;
     }
-
-    // use @extend to inherit code from a basic model
-    .two:hover {
-      @extend .one:hover;
-      background: #ffffe5;
-    }
-
-    .three:hover {
-      @extend .one:hover;
-      background: #e5f2e5;
-    }
-
-    .four:hover {
-      @extend .one:hover;
-      background: #e5e5ff;
-    }
-
-    .five:hover {
-      @extend .one:hover;
-      background: #f2e5f2;
-    }
+    // // use @extend to inherit code from a basic model
+    // .one:hover {
+    //   @extend a:hover;
+    // }
 }
