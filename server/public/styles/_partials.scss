@@ -1,9 +1,44 @@
 //declare variables
-$primary-color: green; // $liner: underline;
+$primary-color: white; // $liner: underline;
 
 
 
 h1 {
     color: $primary-color;
     // text-decoration: $liner;
+}
+
+.background-wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+// use @extend to inherit code from a basic model
+.cactus {
+  @extend .background-wrapper;
+  background: url("../../assets/imgs/cactus.jpg") right no-repeat;
+}
+
+.forgetMeNot {
+  @extend .background-wrapper;
+  background: url("../../assets/imgs/forget-me-not.jpg") right no-repeat;
+}
+
+.foxglove {
+  @extend .background-wrapper;
+  background: url("../../assets/imgs/foxglove.jpg") right no-repeat;
+}
+
+.orchid {
+  @extend .background-wrapper;
+  background: url("../../assets/imgs/orchid.jpg") right no-repeat;
+}
+
+.lotus {
+  @extend .background-wrapper;
+  background: url("../../assets/imgs/lotus.jpg") right no-repeat;
 }

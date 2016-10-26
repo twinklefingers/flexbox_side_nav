@@ -5,8 +5,20 @@ nav {
   position: absolute;
   width: 200px;
   top: 0;
-  bottom: 7%;
+  bottom: 5.6%;
   overflow: auto;
+    .logo {
+      font-style: italic;
+      font-size: 1.25em;
+      background: $background * 1.05;
+    }
+    .logoText{
+      border-top: thin solid black;
+      border-bottom: thin solid black;
+      margin: auto;
+      line-height: 2em;
+      font-weight: bold;
+    }
     a {
         text-decoration: none;
         color: black;
@@ -21,27 +33,23 @@ nav {
         line-height: 5em;
         min-height: 5em;
         border-width: 0.5px 1px;
-        border: solid #9C9D9D;
+        // operators like * can affect a set variables like color in a methodical manner
+        // in this case, the color should lighten on hover, no matter what particular shade
+        border: solid #36454f * 1.1;
         transition: all 0.3s ease 0s;
         background: $background;
         margin: 0;
-
-        img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-
+          // img {
+          //     max-width: 100%;
+          //     max-height: 100%;
+          //     background: $background * 1.05;
+          // }
     }
 
     a:hover {
         font-weight: bold;
         font-size: 1.25em;
-        // operators like * can affect a set variables like color in a methodical manner
-        // in this case, the color should lighten on hover, no matter what particular shade
         background: $background * 1.04;
     }
-    // // use @extend to inherit code from a basic model
-    // .one:hover {
-    //   @extend a:hover;
-    // }
+
 }

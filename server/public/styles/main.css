@@ -2,8 +2,18 @@ nav {
   position: absolute;
   width: 200px;
   top: 0;
-  bottom: 7%;
+  bottom: 5.6%;
   overflow: auto; }
+  nav .logo {
+    font-style: italic;
+    font-size: 1.25em;
+    background: #fffcfe; }
+  nav .logoText {
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+    margin: auto;
+    line-height: 2em;
+    font-weight: bold; }
   nav a {
     text-decoration: none;
     color: black;
@@ -18,20 +28,40 @@ nav {
     line-height: 5em;
     min-height: 5em;
     border-width: 0.5px 1px;
-    border: solid #9C9D9D;
+    border: solid #3b4b56;
     transition: all 0.3s ease 0s;
     background: #fff0f2;
     margin: 0; }
-    nav a img {
-      max-width: 100%;
-      max-height: 100%; }
   nav a:hover {
     font-weight: bold;
     font-size: 1.25em;
     background: #fff9fb; }
 
 h1 {
-  color: green; }
+  color: white; }
+
+.background-wrapper, .cactus, .forgetMeNot, .foxglove, .orchid, .lotus {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1; }
+
+.cactus {
+  background: url("../../assets/imgs/cactus.jpg") right no-repeat; }
+
+.forgetMeNot {
+  background: url("../../assets/imgs/forget-me-not.jpg") right no-repeat; }
+
+.foxglove {
+  background: url("../../assets/imgs/foxglove.jpg") right no-repeat; }
+
+.orchid {
+  background: url("../../assets/imgs/orchid.jpg") right no-repeat; }
+
+.lotus {
+  background: url("../../assets/imgs/lotus.jpg") right no-repeat; }
 
 @font-face {
   font-family: fashionFetish;
@@ -55,6 +85,8 @@ footer {
 
 .tester {
   float: right;
-  font-size: 5em; }
+  margin-right: 2%;
+  font-size: 5em;
+  text-shadow: 2px 2px #3b4b56; }
 
 /*# sourceMappingURL=main.css.map */
