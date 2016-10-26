@@ -1,0 +1,48 @@
+//nest selectors
+nav {
+
+    a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        text-align: center;
+        vertical-align: middle;
+        width: 97%;
+        line-height: 5em;
+        min-height: 5em;
+        border-width: 0.5px 1px;
+        border: solid #9C9D9D;
+        transition: all 0.3s ease 0s;
+        /*background-color: #2992BC;*/
+    }
+
+    .one:hover {
+      background: #ffe5e5;
+      font-weight: bold;
+      font-size: 1.25em;
+    }
+
+    // use @extend to inherit code from a basic model
+    .two:hover {
+      @extend .one:hover;
+      background: #ffffe5;
+    }
+
+    .three:hover {
+      @extend .one:hover;
+      background: #e5f2e5;
+    }
+
+    .four:hover {
+      @extend .one:hover;
+      background: #e5e5ff;
+    }
+
+    .five:hover {
+      @extend .one:hover;
+      background: #f2e5f2;
+    }
+}

@@ -1,9 +1,51 @@
-$primary-color: green;
-// $liner: underline;
+@import "nav";
+
+@import "partials";
 
 
-h1 {
-  color: $primary-color;
-  // text-decoration: $liner;
+@font-face {
+    font-family: fashionFetish;
+    src: url(../assets/fonts/fashion_fetish/FashionFetishLight.ttf);
+}
 
+// @mixins are code chunks that can take parameters
+@mixin screenSize($width, $height){
+  width: $width;
+  height: $height;
+}
+
+
+body, #container {
+    font-family: fashionFetish;
+    // use @mixins by calling @include mixinName, and parameters, if any
+    @include screenSize(100%,100%);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#sideNav {
+    position: absolute;
+    @include screenSize(200px,100%);
+    /*right: 0;*/
+    overflow: auto;
+    /*border: thin dotted magenta;*/
+}
+
+img {
+    width: 97%;
+    max-width: 100%;
+    max-height: 100%;
+    border-width: 0.5px 1px;
+    border: solid #9C9D9D;
+    margin: 0;
+}
+
+main {}
+
+footer {}
+
+.tester {
+    float: right;
+    font-size: 5em;
 }

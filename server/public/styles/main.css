@@ -1,4 +1,64 @@
+nav a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  text-align: center;
+  vertical-align: middle;
+  width: 97%;
+  line-height: 5em;
+  min-height: 5em;
+  border-width: 0.5px 1px;
+  border: solid #9C9D9D;
+  transition: all 0.3s ease 0s;
+  /*background-color: #2992BC;*/ }
+nav .one:hover, nav .two:hover, nav .three:hover, nav .four:hover, nav .five:hover {
+  background: #ffe5e5;
+  font-weight: bold;
+  font-size: 1.25em; }
+nav .two:hover {
+  background: #ffffe5; }
+nav .three:hover {
+  background: #e5f2e5; }
+nav .four:hover {
+  background: #e5e5ff; }
+nav .five:hover {
+  background: #f2e5f2; }
+
 h1 {
   color: green; }
+
+@font-face {
+  font-family: fashionFetish;
+  src: url(../assets/fonts/fashion_fetish/FashionFetishLight.ttf); }
+body, #container {
+  font-family: fashionFetish;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+#sideNav {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  /*right: 0;*/
+  overflow: auto;
+  /*border: thin dotted magenta;*/ }
+
+img {
+  width: 97%;
+  max-width: 100%;
+  max-height: 100%;
+  border-width: 0.5px 1px;
+  border: solid #9C9D9D;
+  margin: 0; }
+
+.tester {
+  float: right;
+  font-size: 5em; }
 
 /*# sourceMappingURL=main.css.map */
